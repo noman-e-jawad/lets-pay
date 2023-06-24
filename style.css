@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;200;300;400;500;600;700;800&display=swap");
+
+:root {
+  --sky-blue: #8ecae6;
+  --blue-green: #219ebc;
+  --prussian-blue: #023047;
+  --selective-yellow: #ffb703;
+  --ut-orange: #fb8500;
+  --white: #fff;
+  --black: #010d14;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 100%;
+}
+a {
+  text-decoration: none;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+button {
+  /* Resetting margin and padding */
+  margin: 0;
+  padding: 0;
+
+  /* Resetting border styles */
+  border: none;
+  border-radius: 0;
+
+  /* Resetting background and text styles */
+  background-color: transparent;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+
+  /* Resetting other styles */
+  cursor: pointer;
+  outline: none;
+}
+h3 {
+  font-size: 1.7rem;
+  font-weight: 600;
+  margin: 0;
+}
+h4 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 0;
+}
+h1 {
+  font-size: 4.5rem;
+  font-weight: 800;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.navbar {
+  width: inherit;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2em;
+  margin-bottom: -125px;
+}
+.nav-menu {
+  list-style-type: none;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.menu-link {
+  color: var(--white);
+  transition: all 0.3s ease-in-out;
+}
+.menu-link:hover {
+  color: var(--blue-green);
+}
+.logo {
+  width: 120px;
+  height: auto;
+}
+.banner {
+  height: 100vh;
+  width: 100%;
+  background-image: url("/image/banner.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.btn {
+  padding: 0.6em 1.8em;
+  background-color: var(--ut-orange);
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--white);
+  transition: all 0.3s ease-in-out;
+}
+.btn:hover {
+  background-color: var(--prussian-blue);
+}
+.container {
+  width: 100%;
+  padding: 6em 0;
+}
+.text-white {
+  color: var(--white);
+}
