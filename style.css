@@ -112,7 +112,7 @@ p {
 .banner {
   height: 100vh;
   width: 100%;
-  background-image: url("/image/banner.jpeg");
+  background-image: URL("./image/banner.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
