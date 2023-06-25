@@ -69,7 +69,7 @@ h1 {
   text-transform: uppercase;
 }
 h2 {
-  font-size: 2.3rem;
+  font-size: 2.7rem;
   font-weight: 800;
   margin: 0;
   text-transform: uppercase;
@@ -112,7 +112,7 @@ p {
 .banner {
   height: 100vh;
   width: 100%;
-  background-image: url("/image/banner.jpeg");
+  background-image: url("./image/banner.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -158,50 +158,6 @@ p {
   color: var(--ut-orange);
   margin-top: 2em;
 }
-.maps {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  row-gap: 3em;
-}
-.map-box-wrapper {
-  width: 50%;
-}
-.map-box {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 0 2em;
-  text-align: center;
-  box-shadow: rgba(255, 255, 255, 0.07) 0px 1px 2px,
-    rgba(255, 255, 255, 0.07) 0px 2px 4px, rgba(255, 255, 255, 0.07) 0px 4px 8px,
-    rgba(255, 255, 255, 0.07) 0px 8px 16px,
-    rgba(255, 255, 255, 0.07) 0px 16px 32px,
-    rgba(255, 255, 255, 0.07) 0px 32px 64px;
-}
-.map-box img {
-  width: 100%;
-  height: 400px;
-  object-fit: cover;
-}
-.map-box-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 3em 2em;
-  gap: 0.7em;
-}
-.map-box .map-box-body h3 {
-  font-weight: 800;
-  color: var(--white);
-}
-.map-box .map-box-body p {
-  color: var(--white);
-}
 .social-row {
   padding: 0.3em;
   background-color: var(--selective-yellow);
@@ -239,4 +195,49 @@ footer p {
 }
 .copyright a {
   color: var(--selective-yellow);
+}
+.maps {
+  display: flex;
+  width: 100%;
+  height: 125vh;
+}
+.map-col {
+  width: 50%;
+}
+.map-img {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.img-col {
+  text-align: center;
+}
+.img-col:first-child {
+  align-self: flex-start;
+}
+.img-col:last-child {
+  align-self: center;
+}
+.img-col img {
+  width: 90%;
+  height: 300px;
+  object-fit: cover;
+  margin-bottom: 1.5em;
+  box-shadow: #ffb703 4px -4px 0px 1px;
+}
+.map-disc {
+  padding-right: 1em;
+}
+.map-disc h2 {
+  margin-left: -8em;
+  padding-right: 4em;
+  color: var(--white);
+}
+.map-disc p {
+  margin-top: 6em;
+  padding-left: 2em;
+}
+.text-orange {
+  color: var(--ut-orange);
 }
